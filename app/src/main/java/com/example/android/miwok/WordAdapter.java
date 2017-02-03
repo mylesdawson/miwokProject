@@ -33,7 +33,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
         TextView miwokView = (TextView)convertView.findViewById(R.id.text_view_1);
         TextView defaultView = (TextView)convertView.findViewById(R.id.text_view_2);
 
-        miwokView.setText(word.getmMiwokTranslation());
+        miwokView.setText(word.getMiwokTranslation());
         defaultView.setText(word.getDefaultTranslation());
 
         // Return the completed view to render on screen
