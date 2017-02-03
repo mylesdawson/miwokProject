@@ -5,12 +5,18 @@ public class Word {
 
     private String mDefaultTranslation;
     private String mMiwokTranslation;
-    private String mMiwokImage;
+    private int mMiwokImage = NO_IMAGE_PROVIDED;
+    private static final int NO_IMAGE_PROVIDED = -1;
 
-    public Word(String defaultTranslation, String miwokTranslation, String miwokImage){
+    public Word(String defaultTranslation, String miwokTranslation, int miwokImage){
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
         mMiwokImage = miwokImage;
+    }
+
+    public Word(String defaultTranslation, String miwokTranslation){
+        mDefaultTranslation = defaultTranslation;
+        mMiwokTranslation = miwokTranslation;
     }
 
     public String getDefaultTranslation(){
@@ -21,8 +27,12 @@ public class Word {
         return mMiwokTranslation;
     }
 
-    public String getmMiwokImage(){
+    public int getmMiwokImage(){
         return mMiwokImage;
+    }
+
+    public boolean hasImage(){
+        return mMiwokImage != NO_IMAGE_PROVIDED;
     }
 
 }
