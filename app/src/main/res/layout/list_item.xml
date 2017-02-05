@@ -11,7 +11,7 @@
         android:id="@+id/image_view"
         android:layout_width="88dp"
         android:layout_height="88dp"
-        android:src="@mipmap/ic_launcher"/>
+        android:src="@mipmap/ic_launcher" />
 
     <LinearLayout
         android:layout_weight="2"
@@ -28,7 +28,7 @@
             android:id="@+id/text_view_1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            tools:text="lutti"/>
+            tools:text="lutti" />
 
         <TextView
             android:layout_weight="1"
@@ -37,14 +37,15 @@
             android:id="@+id/text_view_2"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            tools:text="one"/>
+            tools:text="one" />
     </LinearLayout>
 
     <ImageView
+        android:paddingRight="16dp"
         android:id="@+id/play_button"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:src="@drawable/ic_play_arrow_black_24dp"/>
+        android:src="@drawable/ic_play_arrow_black_24dp" />
 
 
 </LinearLayout>
