@@ -3,8 +3,10 @@ package com.example.android.miwok;
 import android.content.Context;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -115,6 +117,7 @@ public class NumbersActivity extends AppCompatActivity {
         super.onStop();
         releaseMediaPlayer();
     }
+
 
     private void releaseMediaPlayer() {
         // If the media player is not null, then it may be currently playing a sound.
