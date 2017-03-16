@@ -22,7 +22,7 @@
         android:layout_height="match_parent">
 
         <TextView
-
+            android:layout_weight="1"
             android:layout_gravity="bottom"
             style="@style/TextStyle"
             android:id="@+id/text_view_1"
